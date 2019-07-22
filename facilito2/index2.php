@@ -45,7 +45,7 @@
  $message->setBody($html, 'text/html');
  $message->setTo($to);
  $message->addPart($text, 'text/plain');
-/*
+
  // send message
  if ($recipients = $swift->send($message, $failures))
  {
@@ -58,4 +58,4 @@
      echo "Something went wrong - ";
      print_r($failures);
  }
- */
+ ?>
