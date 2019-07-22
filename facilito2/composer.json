@@ -1,0 +1,7 @@
+{
+    "name": "vendor/prueba",
+    "require": {
+        "swiftmailer/swiftmailer": "^6.0",
+        "sendgrid/sendgrid": "2.1.1"
+    }
+}
