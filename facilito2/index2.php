@@ -28,8 +28,8 @@
  $subject = 'Example PHP Email';
 
  // Login credentials
- $username = 'andresvm9';
- $password = 'Jesusteamo_9';
+ $username = 'taskblast';
+ $password = 'VoreTask?29';
 
  // Setup Swift mailer parameters
  $transport = new Swift_SmtpTransport('smtp.sendgrid.net', 587);
