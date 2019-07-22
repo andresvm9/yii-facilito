@@ -28,7 +28,7 @@
  $subject = 'Example PHP Email';
 
  // Login credentials
- $username = 'taskblast';
+ $username = 'azure_bcf0125d65eb6f663a0cef9b05dddc76@azure.com';
  $password = 'VoreTask?29';
 
  // Setup Swift mailer parameters
