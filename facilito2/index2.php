@@ -32,7 +32,7 @@
  $password = 'VoreTask?29';
 
  // Setup Swift mailer parameters
- $transport = new Swift_SmtpTransport('smtp.sendgrid.net', 587);
+ $transport = new Swift_SmtpTransport('smtp.sendgrid.net', 25);
  $transport->setUsername($username);
  $transport->setPassword($password);
  $swift = new Swift_Mailer($transport);
