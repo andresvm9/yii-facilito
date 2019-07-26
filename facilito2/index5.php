@@ -6,6 +6,7 @@ require 'vendor/autoload.php';
 $sendgrid = new SendGrid("SENDGRID_APIKEY");
 $email    = new SendGrid\Email();
 
+
 $email->addTo("avargas@vorealis.com")
       ->setFrom("you@youremail.com")
       ->setSubject("Sending with SendGrid is Fun")
