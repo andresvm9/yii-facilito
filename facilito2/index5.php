@@ -1,7 +1,7 @@
 <?php 
 
 $From = "sender@test.com";
-$To = "<Your Mailaddress>";
+$To = "andresvm9@gmail.com";
 $SMTPServer = "smtp.sendgrid.net";
 $SMTPPort = "587";
 $Username = "azure_bcf0125d65eb6f663a0cef9b05dddc76@azure.com";
