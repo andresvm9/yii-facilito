@@ -1,15 +1,17 @@
 <?php 
 
-$From = "sender@test.com";
-$To = "andresvm9@gmail.com";
-$SMTPServer = "smtp.sendgrid.net";
-$SMTPPort = "587";
-$Username = "azure_bcf0125d65eb6f663a0cef9b05dddc76@azure.com";
-$Password = "VoreTask?29";
-$subject = "Test5";
-$body = "Esta es solo una prueba";
-$smtp = New-Object System.Net.Mail.SmtpClient($SMTPServer, $SMTPPort);
-$smtp.EnableSSL = $true;
-$smtp.Credentials = New-Object System.Net.NetworkCredential($Username, $Password);
-$smtp.Send($From, $To, $subject, $body);
+// using SendGrid's PHP Library
+// https://github.com/sendgrid/sendgrid-php
+require 'vendor/autoload.php';
+$sendgrid = new SendGrid("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");
+$email    = new SendGrid\Email();
+
+
+$email->addTo("andres_v_m@hotmail.com")
+      ->setFrom("avargas@vorealis.com")
+      ->setSubject("Sending with SendGrid is Fun")
+      ->setHtml("and easy to do anywhere, even with PHP");
+
+$sendgrid->send($email);
 ?>
+
